@@ -19,6 +19,7 @@ function AboutPage(props) {
         <ul>
           Telkom University
         </ul>
+        <a className="d-flex align-self-center my-5 decoration-none" href="https://github.com/jordiyapz"><h3>{'Checkout my Github Repo'}</h3></a>
         </Col>
       </Row>
 
