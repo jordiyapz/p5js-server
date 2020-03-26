@@ -3,7 +3,7 @@ const Global = {
   rowDist: 5,               // [2..570/scale] Jarak garis di kertas
   needleLength: 3,          // [1..rowDist) Panjang jarum
   fps: 60,                  // [1..Inf) Batas maksimum refresh per detik (nilai maksimum tergantung prosesor)
-  frameSkip: 100,           // [1..Inf) Banyaknya update yang tidak di-render
+  batchSize: 10,             // [1..Inf) Banyaknya jarum yang dijatuhkan bersamaan
   numOFMaxNeedleShow: 1000  // [0..Inf) Banyaknya jarum yang di-render
 };
 

@@ -9,7 +9,7 @@ class SandboxPage extends React.Component {
     return (
       <Container fluid={true}>
         <Row className="justify-content-center py-5">
-          <Col lg={8} md={12}>
+          <Col className="p-1" lg={8} md={11} sm={12}>
             <h1 className="mb-3">Sandbox</h1>
             <Col id='sketch-container'/>
           </Col>
@@ -29,9 +29,11 @@ class SandboxPage extends React.Component {
 
   componentDidMount() {
 
-    const p5 = document.createElement("script");
-    p5.src = process.env.PUBLIC_URL + '/libraries/p5.js';
-    document.body.appendChild(p5);
+    for (const file of ['p5']) {
+      const p5 = document.createElement("script");
+      p5.src = `${process.env.PUBLIC_URL}/libraries/${file}.js`;
+      document.body.appendChild(p5);
+    }
 
     for (const file of ['Global', 'Needle', 'Paper', 'sketch']) {
       const script = document.createElement('script');

@@ -12,7 +12,7 @@ function HomePage(props) {
       <Hero title={props.title} subtitle={props.subtitle}/>
       <Row className="justify-content-center">
         <Button href="/project" variant="outline-dark" className="py-3 px-5">
-          <h2>Check my projects >> </h2>
+          <h2>Check out my projects >> </h2>
         </Button>
       </Row>
     </Container>
